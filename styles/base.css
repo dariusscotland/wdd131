@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #004466;
+    --secondary-color: #21618C;
+    --accent-color: #FFF;
+    --text-color: #333;
+    --link-color: #004466;
+    
+    --font-body: 'Roboto', sans-serif;
+    --font-heading: 'Merriweather', serif;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: #f0f0f0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 0 auto 10px auto;
+    max-width: 900px;
+}
+
+#course-title {
+    display: block; 
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 12px;
+    display: block; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+
+.card {
+    background-color: var(--accent-color); 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    margin: -20px -20px 20px -20px; 
+    padding: 12px 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profile-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Updated FIX 1: Ensure text takes the majority space and image is fixed on the side */
+.profile-content p {
+    flex: 1; 
+    margin: 0;
+}
+.profile-content img {
+    max-width: 150px; 
+    /* Removed height: 200px to avoid stretching/clipping issues */
+    flex-shrink: 0;
+    
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-heading {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px dashed #eee;
+    color: var(--primary-color);
+}
+
+.flag-container {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.flag-container img {
+    max-width: 100px;
+    height: auto;
+    flex-shrink: 0; 
+    border: 1px solid #999;
+}
+.flag-container p {
+    flex: 1;
+    margin: 0;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+.card ul a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.card ul a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.85rem;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 3px 0;
+}
