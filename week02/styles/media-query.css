@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #333;
+    --accent-color: #d1e2ff;
+    --header-footer-bg: #8ba9d8;
+    --max-width: 640px;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+
+header, main, footer {
+    max-width: var(--max-width);
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: var(--header-footer-bg);
+}
+
+header {
+    padding: 2rem 1rem; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #cceeff;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}

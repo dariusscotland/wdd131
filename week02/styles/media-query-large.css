@@ -1,0 +1,23 @@
+@media screen and (min-width: 500px) {
+
+    header {
+        background-color: #000;
+        color: #fff;
+        text-align: left;
+    }
+
+    header h1 {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        text-align: left;
+        background-color: #8ba9d8;
+        color: #000;
+    }
+}
