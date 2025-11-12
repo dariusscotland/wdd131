@@ -2,6 +2,9 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
 button.addEventListener('click', function() {
     
     if (input.value.trim() !== '') {
@@ -33,3 +36,10 @@ button.addEventListener('click', function() {
         input.focus();
     }
 });
+
+if (hamButton && navigation) {
+    hamButton.addEventListener("click", () => {
+        navigation.classList.toggle("open");
+        hamButton.classList.toggle("open");
+    });
+}
