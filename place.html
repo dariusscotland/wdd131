@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar - Island of Wonders</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Madagascar</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/madagascar-wide.webp" media="(min-width: 768px)">
+                <img src="images/madagascar-mobile.webp" alt="A group of Ring-tailed Lemurs in Madagascar" loading="lazy">
+            </picture>
+
+            <section class="data-card">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>587,041 sq km</dd>
+                    <dt>Population:</dt>
+                    <dd>27,691,018</dd>
+                    <dt>Capital:</dt>
+                    <dd>Antananarivo</dd>
+                    <dt>Languages:</dt>
+                    <dd>Malagasy, French</dd>
+                    <dt>Currency:</dt>
+                    <dd>Malagasy Ariary</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+3</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+261</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.mg</dd>
+                </dl>
+            </section>
+
+            <section class="weather-card">
+                <h2>Weather</h2>
+                <div class="weather-icon-mobile">
+                    <img src="images/partly-cloudy.svg" alt="Partly Cloudy Icon">
+                </div>
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd id="temp-value">10 °C</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                    <dt>Wind:</dt>
+                    <dd id="wind-speed">5 km/h</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd id="wind-chill-value">N/A</dd>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> Darius Scotland | Madagascar</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="script/place.js" defer></script>
+</body>
+</html>
